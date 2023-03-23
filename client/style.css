@@ -1,0 +1,268 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background: #121E26;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background: #121E26;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#video_time_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Updated #media_container */
+#media_container {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  max-width: 854px;
+  height: calc(100% / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#time {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+#gradient_container {
+  position: absolute; /* Add this line */
+  bottom: 0; /* Add this line */
+  width: 80%;
+  height: calc(100% / 2);
+  margin-bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#chat_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 854px;
+  height: calc(100% * (0.85));
+  margin-bottom: 50px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+  left: 50%; /* Add this line */
+  transform: translateX(-50%); /* Add this line */
+}
+
+.message-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.prefix {
+  color: #dcdcdc;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+
+
+#gradient_overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(#121E26, transparent);
+  pointer-events: none; /* So that you can still interact with the chat messages */
+  z-index: 1;
+}
+
+/* Add this block */
+#chat_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(transparent, #121E26);
+  pointer-events: none; /* So that you can still interact with the chat messages */
+  z-index: 1;
+}
+
+#chat_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, transparent, #121E26);
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+/* hides scrollbar */
+#chat_container::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 15px;
+  position: relative; /* Add this line */
+  z-index: 2; /* Add this line */
+  mix-blend-mode: screen; /* Add this line */
+}
+
+.ai {
+  background: #363743;
+}
+
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile {
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 5px;
+
+  background: #F29D35;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai .profile {
+  min-width: 36px;
+  background: #94C6F2;
+}
+
+.profile img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.message {
+  flex: 1;
+
+  color: #dcdcdc;
+  font-size: 20px;
+
+  max-width: 100%;
+  overflow-x: scroll;
+
+  /*
+   * white space refers to any spaces, tabs, or newline characters that are used to format the CSS code
+   * specifies how white space within an element should be handled. It is similar to the "pre" value, which tells the browser to treat all white space as significant and to preserve it exactly as it appears in the source code.
+   * The pre-wrap value allows the browser to wrap long lines of text onto multiple lines if necessary.
+   * The default value for the white-space property in CSS is "normal". This tells the browser to collapse multiple white space characters into a single space, and to wrap text onto multiple lines as needed to fit within its container.
+  */
+  white-space: pre-wrap; 
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hides scrollbar */
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  width: 100%;
+  max-width: 854px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #31363c;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 854px;
+
+  color: #fff;
+  font-size: 18px;
+
+  padding: 10px;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+form img {
+  width: 30px;
+  height: 30px;
+}
