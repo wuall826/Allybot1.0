@@ -53,13 +53,13 @@ body {
   transform: translateX(-50%);
 }
 
-#greeting{
+#greeting {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2rem;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   z-index: 1;
