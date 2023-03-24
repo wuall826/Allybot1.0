@@ -44,7 +44,7 @@ body {
   top: 0;
   width: 80%;
   max-width: 854px;
-  height: calc(100% / 2);
+  height: calc(100% / 4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ body {
   position: absolute; /* Add this line */
   bottom: 0; /* Add this line */
   width: 80%;
-  height: calc(100% / 2);
+  height: calc(100% * 0.75);
   margin-bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
