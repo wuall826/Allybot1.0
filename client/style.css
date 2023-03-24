@@ -78,6 +78,7 @@ body {
   font-weight: light;
   text-align: center;
   z-index: 1;
+  width: 100%;
 }
 
 #text {
@@ -86,6 +87,7 @@ body {
   font-size: 14px;
   text-align: center;
   z-index: 1;
+  width: 100%;
 }
 
 #time {
