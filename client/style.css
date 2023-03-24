@@ -53,6 +53,17 @@ body {
   transform: translateX(-50%);
 }
 
+#greeting
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+
 #time {
   position: absolute;
   bottom: 0px;
