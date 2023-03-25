@@ -34,9 +34,8 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column; /* Updated */
   align-items: center;
-  color: white;
-  font-size: 16px;
   justify-content: center;
 }
 
@@ -95,13 +94,13 @@ body {
 #time {
   position: relative;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   background: rgba(0, 0, 0, 0);
   padding: 5px;
   border-radius: 5px;
   text-align: center;
-  align-items: center;
   z-index: 3;
+  margin-top: 10px; /* Added */
 }
 
 #gradient_container {
