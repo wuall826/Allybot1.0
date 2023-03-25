@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 * {
   margin: 0;
@@ -281,7 +281,7 @@ textarea {
   max-width: 854px;
 
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
 
   padding: 10px;
   background: transparent;
