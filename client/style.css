@@ -99,6 +99,8 @@ body {
   border-radius: 5px;
   text-align: center;
   z-index: 3;
+  justify-content: center;
+  align-items: center;
 }
 
 #gradient_container {
