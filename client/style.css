@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 * {
   margin: 0;
@@ -23,34 +23,20 @@ body {
   justify-content: space-between;
 }
 
+#content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-#greeting {
-  position: absolute;
-  top: 30%; /* Change from 50% to 30% */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 16px;
-  font-weight: light;
-  text-align: center;
-  z-index: 1;
+#video_time_container {
+  position: relative;
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-
-#time {
-  position: absolute;
-  top: calc(100% / 3);
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 18px;
-  background: rgba(0, 0, 0, 0);
-  padding: 5px;
-  border-radius: 5px;
-  text-align: center;
-  z-index: 3;
-}
-
 
 /* Updated #media_container */
 #media_container {
@@ -67,22 +53,71 @@ body {
   transform: translateX(-50%);
 }
 
-#gradient_container {
+#description {
   position: absolute;
-  top: calc(100% / 3);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: light;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#greeting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: light;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+}
+
+#text {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+}
+
+#time {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 3;
+}
+
+#gradient_container {
+  position: absolute; /* Add this line */
+  bottom: 0; /* Add this line */
   width: 80%;
   height: calc(100% * 0.75);
+  margin-bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-
 #chat_container {
   position: absolute;
-  top: 0;
+  bottom: 0;
   width: 100%;
   max-width: 854px;
   height: calc(100% * (0.85));
+  margin-bottom: 50px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column-reverse;
@@ -95,7 +130,6 @@ body {
   transform: translateX(-50%); /* Add this line */
 }
 
-
 .message-container {
   display: flex;
   align-items: center;
@@ -104,7 +138,7 @@ body {
 
 .prefix {
   color: #dcdcdc;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 4px;
 }
 
@@ -204,7 +238,7 @@ body {
   flex: 1;
 
   color: #dcdcdc;
-  font-size: 18px;
+  font-size: 20px;
 
   max-width: 100%;
   overflow-x: scroll;
@@ -247,7 +281,7 @@ textarea {
   max-width: 854px;
 
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 
   padding: 10px;
   background: transparent;
