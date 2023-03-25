@@ -55,7 +55,7 @@ body {
 
 #time {
   position: absolute;
-  top: calc(100% / 3);
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
