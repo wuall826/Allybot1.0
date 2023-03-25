@@ -40,9 +40,22 @@ body {
   gap: 10px;
 }
 
+#greeting {
+  position: absolute;
+  top: 30%; /* Change from 50% to 30% */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: light;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+}
+
 #time {
   position: absolute;
-  top: calc(100% / 3 + 10px);
+  top: calc(100% / 3);
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -53,7 +66,6 @@ body {
   text-align: center;
   z-index: 3;
 }
-
 
 /* Updated #media_container */
 #media_container {
