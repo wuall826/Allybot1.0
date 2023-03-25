@@ -46,6 +46,7 @@ body {
   max-width: 854px;
   height: calc(100% / 3);
   display: flex;
+  color: white;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -91,7 +92,7 @@ body {
 }
 
 #time {
-  position: relative;
+  position: absolute;
   color: white;
   font-size: 18px;
   background: rgba(0, 0, 0, 0);
