@@ -96,11 +96,11 @@ body {
   color: white;
   font-size: 18px;
   background: rgba(0, 0, 0, 0);
-  padding: 5px;
-  border-radius: 5px;
+  padding: 0px;
+  border-radius: 0px;
   text-align: center;
-  z-index: 3;
-  justify-content: center;
+  z-index: 1;
+  justify-content: top;
   align-items: center;
 }
 
