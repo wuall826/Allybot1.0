@@ -95,11 +95,12 @@ body {
 #time {
   position: relative;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   background: rgba(0, 0, 0, 0);
   padding: 5px;
   border-radius: 5px;
   text-align: center;
+  align-items: center;
   z-index: 3;
 }
 
@@ -140,7 +141,7 @@ body {
 
 .prefix {
   color: #dcdcdc;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 4px;
 }
 
@@ -240,7 +241,7 @@ body {
   flex: 1;
 
   color: #dcdcdc;
-  font-size: 20px;
+  font-size: 18px;
 
   max-width: 100%;
   overflow-x: scroll;
@@ -283,7 +284,7 @@ textarea {
   max-width: 854px;
 
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
 
   padding: 10px;
   background: transparent;
