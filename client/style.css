@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 * {
   margin: 0;
@@ -44,7 +44,7 @@ body {
   top: 0;
   width: 80%;
   max-width: 854px;
-  height: calc(100% / 3);
+  height: calc(100% / 5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,34 +53,52 @@ body {
   transform: translateX(-50%);
 }
 
-#description-container {
+#description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: light;
+  text-align: center;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 #greeting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: light;
   text-align: center;
-  margin-bottom: 20px;
+  z-index: 1;
 }
 
 #text {
+  position: relative;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
+
 #time {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
   font-size: 18px;
-  text-align: center;
-  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 3;
 }
 
 #gradient_container {
