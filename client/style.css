@@ -94,9 +94,9 @@ body {
 
 #time {
   position: absolute;
-  top: calc(50% - 0px); /* Subtract 10px from the top position */
+  top: calc(50% + 20px); /* Subtract 10px from the top position */
   left: 50%;
-  transform: translate(-50%, calc(-50% - 0px)); /* Subtract 10px from the Y axis in transform */
+  transform: translate(-50%, calc(-50% + 20px)); /* Subtract 10px from the Y axis in transform */
   color: white;
   font-size: 18px;
   background: rgba(0, 0, 0, 0);
