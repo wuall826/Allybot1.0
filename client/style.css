@@ -91,18 +91,23 @@ body {
   width: 100%;
 }
 
+
 #time {
   position: absolute;
+  top: calc(50% - 10px); /* Subtract 10px from the top position */
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 10px)); /* Subtract 10px from the Y axis in transform */
   color: white;
   font-size: 18px;
   background: rgba(0, 0, 0, 0);
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  z-index: 4;
+  z-index: 3;
   justify-content: center;
   align-items: center;
 }
+
 
 #gradient_container {
   position: absolute; /* Add this line */
