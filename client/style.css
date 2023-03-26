@@ -146,7 +146,7 @@ body {
 
 .prefix {
   color: #dcdcdc;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 4px;
 }
 
@@ -246,7 +246,7 @@ body {
   flex: 1;
 
   color: #dcdcdc;
-  font-size: 20px;
+  font-size: 16px;
 
   max-width: 100%;
   overflow-x: scroll;
