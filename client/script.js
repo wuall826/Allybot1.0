@@ -85,7 +85,7 @@ function chatStripe(isAi, value, uniqueId) {
     const prefix = isAi ? 'Ally1.0:' : 'You:';
     const message = value;
     return (
-      `
+      ` 
         <div class="wrapper ${isAi && 'ai'}">
           <div class="chat">
             <div class="profile">
@@ -96,7 +96,7 @@ function chatStripe(isAi, value, uniqueId) {
             </div>
             <div class="message-container">
               <div class="prefix">${prefix}</div>
-              <div class="message" id=${uniqueId}> ${message}</div>
+              <div class="message" id=${uniqueId}>${message}</div> <!-- Remove the space here -->
             </div>
           </div>
         </div>
