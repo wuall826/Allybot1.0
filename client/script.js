@@ -85,7 +85,7 @@ function chatStripe(isAi, value, uniqueId) {
     const prefix = isAi ? 'Ally1.0:' : 'You:';
     const message = value;
     return (
-      ` 
+      `
         <div class="wrapper ${isAi && 'ai'}">
           <div class="chat">
             <div class="profile">
